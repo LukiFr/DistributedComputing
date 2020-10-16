@@ -19,11 +19,22 @@ namespace DistributedComputing.Controllers
             _context = context;
         }
 
+        [HttpGet]
         public IActionResult GetAll()
         {
             return Ok(_context.Patients.ToList());
         }
 
+        [HttpPost]
+      
+        public IActionResult Add (Patient p)
+        {
+            _context.Patients.Add(p);
+            _context.SaveChanges();
+
+            return Created("/api/patients/", p);
+
+        }
 
     }
 }
