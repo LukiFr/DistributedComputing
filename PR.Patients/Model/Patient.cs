@@ -18,5 +18,7 @@ namespace DistributedComputing.Model
 
         public System.DateTime DateOfPositiveTest { get; set; }
 
+        public string EmailAdress { get; set; }
+
     }
 }

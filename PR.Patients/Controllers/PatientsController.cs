@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using DistributedComputing.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.ServiceBus;
+
 
 namespace DistributedComputing.Controllers
 {
@@ -13,10 +15,12 @@ namespace DistributedComputing.Controllers
     public class PatientsController : ControllerBase
     {
         public readonly PrDataContext _context;
+        public readonly ServiceBusSender _sender;
 
-        public PatientsController(PrDataContext context)
+        public PatientsController(PrDataContext context, ServiceBusSender sender)
         {
             _context = context;
+            _sender = sender;
         }
 
         [HttpGet]
@@ -27,10 +31,19 @@ namespace DistributedComputing.Controllers
 
         [HttpPost]
       
-        public IActionResult Add (Patient p)
+        public async Task<IActionResult>Add (Patient p)
         {
             _context.Patients.Add(p);
             _context.SaveChanges();
+
+            await _sender.SendMessage(new MessagePayload()
+            {
+                EventName = "NewUserRegistered",
+                EmailAddress = "lukaszfraniewskiwwsi@gmail.com",
+                Title = "COVID19",
+                Message = "Idziesz na kwarantanne!"
+
+            });
 
             return Created("/api/patients/", p);
 
