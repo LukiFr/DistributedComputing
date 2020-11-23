@@ -7,15 +7,19 @@ using System.Reflection.Metadata;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using IdentityModel.Client;
+using Microsoft.Identity.Client;
 using Newtonsoft.Json;
 
 namespace PR.Client
 {
     class Program
     {
+
+        static HttpClient client = new HttpClient();
+
         static async Task Main(string[] args)
         {
-
             bool isRunning = true;
 
             while (isRunning)
@@ -27,10 +31,10 @@ namespace PR.Client
 
                 int caseSwitch = Convert.ToInt32(Console.ReadLine());
 
-
                 switch (caseSwitch)
                 {
                     case 1:
+                        Authorize();
                         createUser();
                         break;
                     case 2:
@@ -46,14 +50,25 @@ namespace PR.Client
                 }
 
             }
-
                 
+        }
+
+        static private async void Authorize()
+        {
+            var app = PublicClientApplicationBuilder.Create("67dd9cfb-4344-4cc8-a2ca-573f6bb4422f")
+              .WithAuthority("https://login.microsoftonline.com/146ab906-a33d-47df-ae47-fb16c039ef96/v2.0")
+              .WithDefaultRedirectUri()
+              .Build();
+
+            var result = await app.AcquireTokenInteractive(new[] { "api://67dd9cfb-4344-4cc8-a2ca-573f6bb4422f/.default" })
+           .ExecuteAsync();
+
+            client.DefaultRequestHeaders.Authorization = AuthenticationHeaderValue.Parse("Bearer " + result.AccessToken);
         }
 
         static private async void createUser()
         {
-            HttpClient client = new HttpClient();
-
+           
             Patient p = new Patient();
             Console.WriteLine("Podaj imie pacjenta:");
             p.FirstName = Console.ReadLine();
@@ -70,7 +85,8 @@ namespace PR.Client
 
             string userJson = System.Text.Json.JsonSerializer.Serialize(p);
 
-            await client.PostAsync("https://localhost:5000/api/patients",
+            
+            await client.PostAsync("https://localhost:5000/api/patients", //Post/Put
                 new StringContent(userJson, Encoding.UTF8, "application/json"));
 
             Console.WriteLine("Dodano pacjenta:");

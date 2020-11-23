@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DistributedComputing.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.ServiceBus;
@@ -12,6 +13,8 @@ namespace DistributedComputing.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
+
     public class PatientsController : ControllerBase
     {
         public readonly PrDataContext _context;
@@ -23,14 +26,22 @@ namespace DistributedComputing.Controllers
             _sender = sender;
         }
 
+        //[HttpPut]
+        //[AllowAnonymous]
+        //public IActionResult InvalidAction()
+        //{
+            //throw new InvalidOperationException("Symulowany problem z aplikacja");
+        //}
+
         [HttpGet]
+        [AllowAnonymous]
+
         public IActionResult GetAll()
         {
             return Ok(_context.Patients.ToList());
         }
 
-        [HttpPost]
-      
+        [HttpPost]      
         public async Task<IActionResult>Add (Patient p)
         {
             _context.Patients.Add(p);

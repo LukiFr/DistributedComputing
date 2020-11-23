@@ -1,0 +1,439 @@
+2020-11-23 20:47:45.497 +01:00 [DBG] Hosting starting
+2020-11-23 20:47:45.790 +01:00 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-23 20:47:45.850 +01:00 [DBG] Reading data from file 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys\key-6c4db5d7-0385-45b9-8d0e-4b3b066fc119.xml'.
+2020-11-23 20:47:45.882 +01:00 [DBG] Found key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119}.
+2020-11-23 20:47:45.900 +01:00 [DBG] Considering key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} with expiration date 2021-01-10 17:56:15Z as default key.
+2020-11-23 20:47:45.915 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-23 20:47:45.922 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2020-11-23 20:47:45.927 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-23 20:47:45.936 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2020-11-23 20:47:45.946 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2020-11-23 20:47:45.966 +01:00 [DBG] Using key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} as the default key.
+2020-11-23 20:47:45.982 +01:00 [DBG] Key ring with default key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} was loaded during application startup.
+2020-11-23 20:47:47.246 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2020-11-23 20:47:47.328 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 04FCC8833D747B4EC23C7D55EB302A8BB9D18B02)
+2020-11-23 20:47:47.344 +01:00 [INF] Now listening on: https://localhost:5000
+2020-11-23 20:47:47.351 +01:00 [DBG] Loaded hosting startup assembly Module 1
+2020-11-23 20:47:47.358 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-23 20:47:47.364 +01:00 [INF] Hosting environment: Development
+2020-11-23 20:47:47.369 +01:00 [INF] Content root path: C:\Users\Admin\source\repos\PR.Patients\PR.Patients
+2020-11-23 20:47:47.374 +01:00 [DBG] Hosting started
+2020-11-23 20:47:47.401 +01:00 [DBG] Connection id "0HM4FT2JJR0QS" accepted.
+2020-11-23 20:47:47.417 +01:00 [DBG] Connection id "0HM4FT2JJR0QS" started.
+2020-11-23 20:47:47.422 +01:00 [DBG] Connection id "0HM4FT2JJR0QS" received FIN.
+2020-11-23 20:47:47.438 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessAuthentication(LazyAsyncResult lazyResult, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.BeginAuthenticateAsServer(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken, AsyncCallback asyncCallback, Object asyncState)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_0(SslServerAuthenticationOptions arg1, CancellationToken arg2, AsyncCallback callback, Object state)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1,TArg2](Func`5 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state)
+   at System.Net.Security.SslStream.AuthenticateAsServerAsync(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2020-11-23 20:47:47.570 +01:00 [DBG] Connection id "0HM4FT2JJR0QS" stopped.
+2020-11-23 20:47:47.580 +01:00 [DBG] Connection id "0HM4FT2JJR0QS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2020-11-23 20:47:48.292 +01:00 [DBG] Connection id "0HM4FT2JJR0QT" accepted.
+2020-11-23 20:47:48.304 +01:00 [DBG] Connection id "0HM4FT2JJR0QT" started.
+2020-11-23 20:47:48.432 +01:00 [VRB] Connection id "0HM4FT2JJR0QT" sending "SETTINGS" frame for stream ID 0 with length 18 and flags "NONE"
+2020-11-23 20:47:48.445 +01:00 [VRB] Connection id "0HM4FT2JJR0QT" sending "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0
+2020-11-23 20:47:48.458 +01:00 [VRB] Connection id "0HM4FT2JJR0QT" received "SETTINGS" frame for stream ID 0 with length 24 and flags "NONE"
+2020-11-23 20:47:48.471 +01:00 [VRB] Connection id "0HM4FT2JJR0QT" sending "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK"
+2020-11-23 20:47:48.485 +01:00 [VRB] Connection id "0HM4FT2JJR0QT" received "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0
+2020-11-23 20:47:48.501 +01:00 [VRB] Connection id "0HM4FT2JJR0QT" received "HEADERS" frame for stream ID 1 with length 359 and flags "END_STREAM, END_HEADERS, PRIORITY"
+2020-11-23 20:47:48.559 +01:00 [VRB] Connection id "0HM4FT2JJR0QT" received "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK"
+2020-11-23 20:47:48.666 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/patients  
+2020-11-23 20:47:48.681 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2020-11-23 20:47:48.684 +01:00 [VRB] All hosts are allowed.
+2020-11-23 20:47:48.743 +01:00 [DBG] 1 candidate(s) found for the request path '/api/patients'
+2020-11-23 20:47:48.758 +01:00 [DBG] Endpoint 'DistributedComputing.Controllers.PatientsController.GetAll (Module 1)' with route pattern 'api/Patients' is valid for the request path '/api/patients'
+2020-11-23 20:47:48.767 +01:00 [DBG] Request matched endpoint 'DistributedComputing.Controllers.PatientsController.GetAll (Module 1)'
+2020-11-23 20:47:48.908 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-11-23 20:47:48.919 +01:00 [INF] Executing endpoint 'DistributedComputing.Controllers.PatientsController.GetAll (Module 1)'
+2020-11-23 20:47:48.941 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2020-11-23 20:47:49.093 +01:00 [INF] Route matched with {action = "GetAll", controller = "Patients"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DistributedComputing.Controllers.PatientsController (Module 1).
+2020-11-23 20:47:49.101 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-11-23 20:47:49.106 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-11-23 20:47:49.115 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-11-23 20:47:49.122 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-11-23 20:47:49.130 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-11-23 20:47:49.138 +01:00 [DBG] Executing controller factory for controller DistributedComputing.Controllers.PatientsController (Module 1)
+2020-11-23 20:47:49.320 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2020-11-23 20:47:49.399 +01:00 [DBG] Executed controller factory for controller DistributedComputing.Controllers.PatientsController (Module 1)
+2020-11-23 20:47:49.404 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-23 20:47:49.410 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-23 20:47:49.418 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-23 20:47:49.426 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-23 20:47:49.559 +01:00 [INF] Executing action method DistributedComputing.Controllers.PatientsController.GetAll (Module 1) - Validation state: "Valid"
+2020-11-23 20:47:50.168 +01:00 [INF] Entity Framework Core 3.1.8 initialized 'PrDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-11-23 20:47:50.434 +01:00 [DBG] queryContext => new QueryingEnumerable<Patient>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Patient>, 
+    DistributedComputing.Model.PrDataContext, 
+    null
+)
+2020-11-23 20:47:50.479 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-11-23 20:47:50.550 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (64ms).
+2020-11-23 20:47:50.564 +01:00 [DBG] Opening connection to database 'pr' on server 'tcp:lfraniewski.database.windows.net,1433'.
+2020-11-23 20:47:51.202 +01:00 [DBG] Opened connection to database 'pr' on server 'tcp:lfraniewski.database.windows.net,1433'.
+2020-11-23 20:47:51.222 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Age], [p].[DateOfPositiveTest], [p].[EmailAdress], [p].[FirstName], [p].[LastName]
+FROM [Patients] AS [p]
+2020-11-23 20:47:51.452 +01:00 [INF] Executed DbCommand (219ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Age], [p].[DateOfPositiveTest], [p].[EmailAdress], [p].[FirstName], [p].[LastName]
+FROM [Patients] AS [p]
+2020-11-23 20:47:51.563 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:47:51.618 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:47:51.624 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:47:51.633 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:47:51.638 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:47:51.647 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:47:51.653 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:47:51.663 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:47:51.676 +01:00 [DBG] A data reader was disposed.
+2020-11-23 20:47:51.685 +01:00 [DBG] Closing connection to database 'pr' on server 'tcp:lfraniewski.database.windows.net,1433'.
+2020-11-23 20:47:51.703 +01:00 [DBG] Closed connection to database 'pr' on server 'tcp:lfraniewski.database.windows.net,1433'.
+2020-11-23 20:47:51.715 +01:00 [INF] Executed action method DistributedComputing.Controllers.PatientsController.GetAll (Module 1), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2141.8742ms.
+2020-11-23 20:47:51.722 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-23 20:47:51.732 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-23 20:47:51.737 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-23 20:47:51.746 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-23 20:47:51.756 +01:00 [VRB] Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-23 20:47:51.766 +01:00 [VRB] Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-23 20:47:51.776 +01:00 [VRB] Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-11-23 20:47:51.784 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-11-23 20:47:51.803 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-11-23 20:47:51.816 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-11-23 20:47:51.824 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-11-23 20:47:51.832 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-11-23 20:47:51.840 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[DistributedComputing.Model.Patient, Module 1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-11-23 20:47:51.897 +01:00 [VRB] Connection id "0HM4FT2JJR0QT" sending "HEADERS" frame for stream ID 1 with length 123 and flags "END_HEADERS"
+2020-11-23 20:47:51.904 +01:00 [VRB] Connection id "0HM4FT2JJR0QT" sending "DATA" frame for stream ID 1 with length 1084 and flags "NONE"
+2020-11-23 20:47:51.914 +01:00 [VRB] After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-11-23 20:47:51.919 +01:00 [VRB] Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-23 20:47:51.939 +01:00 [VRB] Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-23 20:47:51.975 +01:00 [INF] Executed action DistributedComputing.Controllers.PatientsController.GetAll (Module 1) in 2819.622ms
+2020-11-23 20:47:51.984 +01:00 [INF] Executed endpoint 'DistributedComputing.Controllers.PatientsController.GetAll (Module 1)'
+2020-11-23 20:47:51.999 +01:00 [INF] HTTP GET /api/patients responded 200 in 3299.9337 ms
+2020-11-23 20:47:52.006 +01:00 [VRB] Connection id "0HM4FT2JJR0QT" sending "DATA" frame for stream ID 1 with length 0 and flags "END_STREAM"
+2020-11-23 20:47:52.029 +01:00 [DBG] 'PrDataContext' disposed.
+2020-11-23 20:47:52.047 +01:00 [INF] Request finished in 3419.6429ms 200 application/json; charset=utf-8
+2020-11-23 20:51:03.100 +01:00 [DBG] Hosting starting
+2020-11-23 20:51:03.440 +01:00 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-23 20:51:03.485 +01:00 [DBG] Reading data from file 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys\key-6c4db5d7-0385-45b9-8d0e-4b3b066fc119.xml'.
+2020-11-23 20:51:03.522 +01:00 [DBG] Found key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119}.
+2020-11-23 20:51:03.545 +01:00 [DBG] Considering key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} with expiration date 2021-01-10 17:56:15Z as default key.
+2020-11-23 20:51:03.569 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-23 20:51:03.579 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2020-11-23 20:51:03.586 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-23 20:51:03.606 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2020-11-23 20:51:03.615 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2020-11-23 20:51:03.627 +01:00 [DBG] Using key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} as the default key.
+2020-11-23 20:51:03.634 +01:00 [DBG] Key ring with default key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} was loaded during application startup.
+2020-11-23 20:51:05.019 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2020-11-23 20:51:05.100 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 04FCC8833D747B4EC23C7D55EB302A8BB9D18B02)
+2020-11-23 20:51:05.119 +01:00 [INF] Now listening on: https://localhost:5000
+2020-11-23 20:51:05.142 +01:00 [DBG] Loaded hosting startup assembly Module 1
+2020-11-23 20:51:05.151 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-23 20:51:05.200 +01:00 [INF] Hosting environment: Development
+2020-11-23 20:51:05.218 +01:00 [INF] Content root path: C:\Users\Admin\source\repos\PR.Patients\PR.Patients
+2020-11-23 20:51:05.224 +01:00 [DBG] Hosting started
+2020-11-23 20:51:05.379 +01:00 [DBG] Connection id "0HM4FT4EJTDOE" accepted.
+2020-11-23 20:51:05.379 +01:00 [DBG] Connection id "0HM4FT4EJTDOF" accepted.
+2020-11-23 20:51:05.391 +01:00 [DBG] Connection id "0HM4FT4EJTDOF" started.
+2020-11-23 20:51:05.391 +01:00 [DBG] Connection id "0HM4FT4EJTDOE" started.
+2020-11-23 20:51:05.493 +01:00 [DBG] Connection id "0HM4FT4EJTDOE" received FIN.
+2020-11-23 20:51:05.497 +01:00 [DBG] Connection id "0HM4FT4EJTDOF" received FIN.
+2020-11-23 20:51:05.694 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2020-11-23 20:51:05.694 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2020-11-23 20:51:06.133 +01:00 [DBG] Connection id "0HM4FT4EJTDOE" stopped.
+2020-11-23 20:51:06.155 +01:00 [DBG] Connection id "0HM4FT4EJTDOF" stopped.
+2020-11-23 20:51:06.205 +01:00 [DBG] Connection id "0HM4FT4EJTDOF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2020-11-23 20:51:06.205 +01:00 [DBG] Connection id "0HM4FT4EJTDOE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2020-11-23 20:51:06.608 +01:00 [DBG] Connection id "0HM4FT4EJTDOG" accepted.
+2020-11-23 20:51:06.670 +01:00 [DBG] Connection id "0HM4FT4EJTDOG" started.
+2020-11-23 20:51:06.751 +01:00 [VRB] Connection id "0HM4FT4EJTDOG" sending "SETTINGS" frame for stream ID 0 with length 18 and flags "NONE"
+2020-11-23 20:51:06.771 +01:00 [VRB] Connection id "0HM4FT4EJTDOG" sending "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0
+2020-11-23 20:51:06.797 +01:00 [VRB] Connection id "0HM4FT4EJTDOG" received "SETTINGS" frame for stream ID 0 with length 24 and flags "NONE"
+2020-11-23 20:51:06.825 +01:00 [VRB] Connection id "0HM4FT4EJTDOG" sending "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK"
+2020-11-23 20:51:06.850 +01:00 [VRB] Connection id "0HM4FT4EJTDOG" received "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0
+2020-11-23 20:51:06.865 +01:00 [VRB] Connection id "0HM4FT4EJTDOG" received "HEADERS" frame for stream ID 1 with length 359 and flags "END_STREAM, END_HEADERS, PRIORITY"
+2020-11-23 20:51:06.935 +01:00 [VRB] Connection id "0HM4FT4EJTDOG" received "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK"
+2020-11-23 20:51:07.033 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/patients  
+2020-11-23 20:51:07.049 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2020-11-23 20:51:07.054 +01:00 [VRB] All hosts are allowed.
+2020-11-23 20:51:07.130 +01:00 [DBG] 1 candidate(s) found for the request path '/api/patients'
+2020-11-23 20:51:07.139 +01:00 [DBG] Endpoint 'DistributedComputing.Controllers.PatientsController.GetAll (Module 1)' with route pattern 'api/Patients' is valid for the request path '/api/patients'
+2020-11-23 20:51:07.153 +01:00 [DBG] Request matched endpoint 'DistributedComputing.Controllers.PatientsController.GetAll (Module 1)'
+2020-11-23 20:51:07.272 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-11-23 20:51:07.287 +01:00 [INF] Executing endpoint 'DistributedComputing.Controllers.PatientsController.GetAll (Module 1)'
+2020-11-23 20:51:07.317 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2020-11-23 20:51:07.483 +01:00 [INF] Route matched with {action = "GetAll", controller = "Patients"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DistributedComputing.Controllers.PatientsController (Module 1).
+2020-11-23 20:51:07.490 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-11-23 20:51:07.499 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-11-23 20:51:07.504 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-11-23 20:51:07.515 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-11-23 20:51:07.520 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-11-23 20:51:07.529 +01:00 [DBG] Executing controller factory for controller DistributedComputing.Controllers.PatientsController (Module 1)
+2020-11-23 20:51:07.732 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2020-11-23 20:51:07.800 +01:00 [DBG] Executed controller factory for controller DistributedComputing.Controllers.PatientsController (Module 1)
+2020-11-23 20:51:07.807 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-23 20:51:07.815 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-23 20:51:07.820 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-23 20:51:07.828 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-23 20:51:07.935 +01:00 [INF] Executing action method DistributedComputing.Controllers.PatientsController.GetAll (Module 1) - Validation state: "Valid"
+2020-11-23 20:51:08.581 +01:00 [INF] Entity Framework Core 3.1.8 initialized 'PrDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-11-23 20:51:08.869 +01:00 [DBG] queryContext => new QueryingEnumerable<Patient>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Patient>, 
+    DistributedComputing.Model.PrDataContext, 
+    null
+)
+2020-11-23 20:51:08.917 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-11-23 20:51:08.991 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (69ms).
+2020-11-23 20:51:09.010 +01:00 [DBG] Opening connection to database 'pr' on server 'tcp:lfraniewski.database.windows.net,1433'.
+2020-11-23 20:51:09.593 +01:00 [DBG] Opened connection to database 'pr' on server 'tcp:lfraniewski.database.windows.net,1433'.
+2020-11-23 20:51:09.617 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Age], [p].[DateOfPositiveTest], [p].[EmailAdress], [p].[FirstName], [p].[LastName]
+FROM [Patients] AS [p]
+2020-11-23 20:51:09.851 +01:00 [INF] Executed DbCommand (218ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Age], [p].[DateOfPositiveTest], [p].[EmailAdress], [p].[FirstName], [p].[LastName]
+FROM [Patients] AS [p]
+2020-11-23 20:51:09.968 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:10.029 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:10.037 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:10.046 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:10.054 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:10.061 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:10.067 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:10.077 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:10.097 +01:00 [DBG] A data reader was disposed.
+2020-11-23 20:51:10.105 +01:00 [DBG] Closing connection to database 'pr' on server 'tcp:lfraniewski.database.windows.net,1433'.
+2020-11-23 20:51:10.121 +01:00 [DBG] Closed connection to database 'pr' on server 'tcp:lfraniewski.database.windows.net,1433'.
+2020-11-23 20:51:10.136 +01:00 [INF] Executed action method DistributedComputing.Controllers.PatientsController.GetAll (Module 1), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2188.4599ms.
+2020-11-23 20:51:10.163 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-23 20:51:10.170 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-23 20:51:10.179 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-23 20:51:10.185 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-23 20:51:10.196 +01:00 [VRB] Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-23 20:51:10.203 +01:00 [VRB] Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-23 20:51:10.214 +01:00 [VRB] Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-11-23 20:51:10.222 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-11-23 20:51:10.247 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-11-23 20:51:10.251 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-11-23 20:51:10.264 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-11-23 20:51:10.270 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-11-23 20:51:10.281 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[DistributedComputing.Model.Patient, Module 1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-11-23 20:51:10.315 +01:00 [VRB] Connection id "0HM4FT4EJTDOG" sending "HEADERS" frame for stream ID 1 with length 123 and flags "END_HEADERS"
+2020-11-23 20:51:10.322 +01:00 [VRB] Connection id "0HM4FT4EJTDOG" sending "DATA" frame for stream ID 1 with length 1084 and flags "NONE"
+2020-11-23 20:51:10.333 +01:00 [VRB] After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-11-23 20:51:10.344 +01:00 [VRB] Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-23 20:51:10.362 +01:00 [VRB] Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-23 20:51:10.406 +01:00 [INF] Executed action DistributedComputing.Controllers.PatientsController.GetAll (Module 1) in 2855.8164ms
+2020-11-23 20:51:10.412 +01:00 [INF] Executed endpoint 'DistributedComputing.Controllers.PatientsController.GetAll (Module 1)'
+2020-11-23 20:51:10.421 +01:00 [INF] HTTP GET /api/patients responded 200 in 3353.4132 ms
+2020-11-23 20:51:10.433 +01:00 [VRB] Connection id "0HM4FT4EJTDOG" sending "DATA" frame for stream ID 1 with length 0 and flags "END_STREAM"
+2020-11-23 20:51:10.449 +01:00 [DBG] 'PrDataContext' disposed.
+2020-11-23 20:51:10.468 +01:00 [INF] Request finished in 3480.2681ms 200 application/json; charset=utf-8
+2020-11-23 20:51:38.391 +01:00 [DBG] Connection id "0HM4FT4EJTDOH" accepted.
+2020-11-23 20:51:38.406 +01:00 [DBG] Connection id "0HM4FT4EJTDOH" started.
+2020-11-23 20:51:38.457 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:5000/api/patients application/json; charset=utf-8 136
+2020-11-23 20:51:38.462 +01:00 [VRB] All hosts are allowed.
+2020-11-23 20:51:38.466 +01:00 [DBG] 1 candidate(s) found for the request path '/api/patients'
+2020-11-23 20:51:38.471 +01:00 [DBG] Endpoint 'DistributedComputing.Controllers.PatientsController.Add (Module 1)' with route pattern 'api/Patients' is valid for the request path '/api/patients'
+2020-11-23 20:51:38.478 +01:00 [DBG] Request matched endpoint 'DistributedComputing.Controllers.PatientsController.Add (Module 1)'
+2020-11-23 20:51:39.347 +01:00 [INF] Successfully validated the token.
+2020-11-23 20:51:39.355 +01:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-11-23 20:51:39.372 +01:00 [INF] Authorization was successful.
+2020-11-23 20:51:39.378 +01:00 [INF] Executing endpoint 'DistributedComputing.Controllers.PatientsController.Add (Module 1)'
+2020-11-23 20:51:39.407 +01:00 [INF] Route matched with {action = "Add", controller = "Patients"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(DistributedComputing.Model.Patient) on controller DistributedComputing.Controllers.PatientsController (Module 1).
+2020-11-23 20:51:39.415 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-11-23 20:51:39.422 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-11-23 20:51:39.428 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-11-23 20:51:39.445 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-11-23 20:51:39.481 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-11-23 20:51:39.490 +01:00 [DBG] Executing controller factory for controller DistributedComputing.Controllers.PatientsController (Module 1)
+2020-11-23 20:51:39.499 +01:00 [DBG] Executed controller factory for controller DistributedComputing.Controllers.PatientsController (Module 1)
+2020-11-23 20:51:39.582 +01:00 [DBG] Attempting to bind parameter 'p' of type 'DistributedComputing.Model.Patient' ...
+2020-11-23 20:51:39.591 +01:00 [DBG] Attempting to bind parameter 'p' of type 'DistributedComputing.Model.Patient' using the name '' in request data ...
+2020-11-23 20:51:39.633 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json; charset=utf-8'.
+2020-11-23 20:51:39.644 +01:00 [DBG] Connection id "0HM4FT4EJTDOH", Request id "0HM4FT4EJTDOH:00000001": started reading request body.
+2020-11-23 20:51:39.649 +01:00 [DBG] Connection id "0HM4FT4EJTDOH", Request id "0HM4FT4EJTDOH:00000001": done reading request body.
+2020-11-23 20:51:39.670 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'DistributedComputing.Model.Patient'
+2020-11-23 20:51:39.680 +01:00 [DBG] Done attempting to bind parameter 'p' of type 'DistributedComputing.Model.Patient'.
+2020-11-23 20:51:39.688 +01:00 [DBG] Done attempting to bind parameter 'p' of type 'DistributedComputing.Model.Patient'.
+2020-11-23 20:51:39.694 +01:00 [DBG] Attempting to validate the bound parameter 'p' of type 'DistributedComputing.Model.Patient' ...
+2020-11-23 20:51:39.709 +01:00 [DBG] Done attempting to validate the bound parameter 'p' of type 'DistributedComputing.Model.Patient'.
+2020-11-23 20:51:39.718 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-23 20:51:39.725 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-23 20:51:39.732 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-23 20:51:39.741 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-23 20:51:39.804 +01:00 [INF] Executing action method DistributedComputing.Controllers.PatientsController.Add (Module 1) - Validation state: "Valid"
+2020-11-23 20:51:39.817 +01:00 [VRB] Executing action method DistributedComputing.Controllers.PatientsController.Add (Module 1) with arguments (["DistributedComputing.Model.Patient"])
+2020-11-23 20:51:39.862 +01:00 [INF] Entity Framework Core 3.1.8 initialized 'PrDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-11-23 20:51:39.911 +01:00 [DBG] 'PrDataContext' generated a temporary value for the 'Id' property of new 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:39.966 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:39.974 +01:00 [DBG] SaveChanges starting for 'PrDataContext'.
+2020-11-23 20:51:39.982 +01:00 [DBG] DetectChanges starting for 'PrDataContext'.
+2020-11-23 20:51:40.007 +01:00 [DBG] DetectChanges completed for 'PrDataContext'.
+2020-11-23 20:51:40.022 +01:00 [DBG] Opening connection to database 'pr' on server 'tcp:lfraniewski.database.windows.net,1433'.
+2020-11-23 20:51:40.029 +01:00 [DBG] Opened connection to database 'pr' on server 'tcp:lfraniewski.database.windows.net,1433'.
+2020-11-23 20:51:40.037 +01:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2020-11-23 20:51:40.097 +01:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2020-11-23 20:51:40.185 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-11-23 20:51:40.189 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2020-11-23 20:51:40.214 +01:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Patients] ([Age], [DateOfPositiveTest], [EmailAdress], [FirstName], [LastName])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Patients]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2020-11-23 20:51:40.312 +01:00 [INF] Executed DbCommand (105ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Patients] ([Age], [DateOfPositiveTest], [EmailAdress], [FirstName], [LastName])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Patients]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2020-11-23 20:51:40.364 +01:00 [DBG] Foreign key property 'Patient.Id' detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2020-11-23 20:51:40.380 +01:00 [DBG] A data reader was disposed.
+2020-11-23 20:51:40.389 +01:00 [DBG] Committing transaction.
+2020-11-23 20:51:40.487 +01:00 [DBG] Committing transaction.
+2020-11-23 20:51:40.493 +01:00 [DBG] Closing connection to database 'pr' on server 'tcp:lfraniewski.database.windows.net,1433'.
+2020-11-23 20:51:40.499 +01:00 [DBG] Closed connection to database 'pr' on server 'tcp:lfraniewski.database.windows.net,1433'.
+2020-11-23 20:51:40.507 +01:00 [DBG] Disposing transaction.
+2020-11-23 20:51:40.566 +01:00 [DBG] An 'Patient' entity tracked by 'PrDataContext' changed from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:40.576 +01:00 [DBG] SaveChanges completed for 'PrDataContext' with 1 entities written to the database.
+2020-11-23 20:51:41.748 +01:00 [INF] Executed action method DistributedComputing.Controllers.PatientsController.Add (Module 1), returned result Microsoft.AspNetCore.Mvc.CreatedResult in 1925.598ms.
+2020-11-23 20:51:41.756 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-23 20:51:41.764 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-23 20:51:41.773 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-23 20:51:41.780 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-23 20:51:41.791 +01:00 [VRB] Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-23 20:51:41.798 +01:00 [VRB] Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-23 20:51:41.811 +01:00 [VRB] Before executing action result Microsoft.AspNetCore.Mvc.CreatedResult.
+2020-11-23 20:51:41.819 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-11-23 20:51:41.842 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-11-23 20:51:41.847 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-11-23 20:51:41.857 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-11-23 20:51:41.863 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-11-23 20:51:41.871 +01:00 [INF] Executing ObjectResult, writing value of type 'DistributedComputing.Model.Patient'.
+2020-11-23 20:51:41.881 +01:00 [VRB] After executing action result Microsoft.AspNetCore.Mvc.CreatedResult.
+2020-11-23 20:51:41.890 +01:00 [VRB] Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-23 20:51:41.899 +01:00 [VRB] Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-23 20:51:41.911 +01:00 [INF] Executed action DistributedComputing.Controllers.PatientsController.Add (Module 1) in 2420.8678ms
+2020-11-23 20:51:41.921 +01:00 [INF] Executed endpoint 'DistributedComputing.Controllers.PatientsController.Add (Module 1)'
+2020-11-23 20:51:41.975 +01:00 [INF] HTTP POST /api/patients responded 201 in 3509.8377 ms
+2020-11-23 20:51:41.982 +01:00 [DBG] Connection id "0HM4FT4EJTDOH" completed keep alive response.
+2020-11-23 20:51:41.992 +01:00 [DBG] 'PrDataContext' disposed.
+2020-11-23 20:51:42.002 +01:00 [INF] Request finished in 3544.6364ms 201 application/json; charset=utf-8
+2020-11-23 20:51:43.694 +01:00 [DBG] Connection id "0HM4FT4EJTDOI" accepted.
+2020-11-23 20:51:43.702 +01:00 [DBG] Connection id "0HM4FT4EJTDOI" started.
+2020-11-23 20:51:43.715 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:5000/api/patients  
+2020-11-23 20:51:43.721 +01:00 [VRB] All hosts are allowed.
+2020-11-23 20:51:43.727 +01:00 [DBG] 1 candidate(s) found for the request path '/api/patients'
+2020-11-23 20:51:43.733 +01:00 [DBG] Endpoint 'DistributedComputing.Controllers.PatientsController.GetAll (Module 1)' with route pattern 'api/Patients' is valid for the request path '/api/patients'
+2020-11-23 20:51:43.741 +01:00 [DBG] Request matched endpoint 'DistributedComputing.Controllers.PatientsController.GetAll (Module 1)'
+2020-11-23 20:51:43.748 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-11-23 20:51:43.754 +01:00 [INF] Executing endpoint 'DistributedComputing.Controllers.PatientsController.GetAll (Module 1)'
+2020-11-23 20:51:43.759 +01:00 [INF] Route matched with {action = "GetAll", controller = "Patients"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DistributedComputing.Controllers.PatientsController (Module 1).
+2020-11-23 20:51:43.768 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-11-23 20:51:43.775 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-11-23 20:51:43.780 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-11-23 20:51:43.789 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-11-23 20:51:43.796 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-11-23 20:51:43.802 +01:00 [DBG] Executing controller factory for controller DistributedComputing.Controllers.PatientsController (Module 1)
+2020-11-23 20:51:43.811 +01:00 [DBG] Executed controller factory for controller DistributedComputing.Controllers.PatientsController (Module 1)
+2020-11-23 20:51:43.816 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-23 20:51:43.823 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-23 20:51:43.828 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-23 20:51:43.837 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-23 20:51:43.890 +01:00 [INF] Executing action method DistributedComputing.Controllers.PatientsController.GetAll (Module 1) - Validation state: "Valid"
+2020-11-23 20:51:43.907 +01:00 [INF] Entity Framework Core 3.1.8 initialized 'PrDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-11-23 20:51:43.916 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-11-23 20:51:43.922 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2020-11-23 20:51:43.927 +01:00 [DBG] Opening connection to database 'pr' on server 'tcp:lfraniewski.database.windows.net,1433'.
+2020-11-23 20:51:43.934 +01:00 [DBG] Opened connection to database 'pr' on server 'tcp:lfraniewski.database.windows.net,1433'.
+2020-11-23 20:51:43.940 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Age], [p].[DateOfPositiveTest], [p].[EmailAdress], [p].[FirstName], [p].[LastName]
+FROM [Patients] AS [p]
+2020-11-23 20:51:43.987 +01:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Age], [p].[DateOfPositiveTest], [p].[EmailAdress], [p].[FirstName], [p].[LastName]
+FROM [Patients] AS [p]
+2020-11-23 20:51:44.013 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:44.020 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:44.027 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:44.034 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:44.043 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:44.050 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:44.057 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:44.064 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:44.072 +01:00 [DBG] Context 'PrDataContext' started tracking 'Patient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-11-23 20:51:44.082 +01:00 [DBG] A data reader was disposed.
+2020-11-23 20:51:44.095 +01:00 [DBG] Closing connection to database 'pr' on server 'tcp:lfraniewski.database.windows.net,1433'.
+2020-11-23 20:51:44.107 +01:00 [DBG] Closed connection to database 'pr' on server 'tcp:lfraniewski.database.windows.net,1433'.
+2020-11-23 20:51:44.114 +01:00 [INF] Executed action method DistributedComputing.Controllers.PatientsController.GetAll (Module 1), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 216.0598ms.
+2020-11-23 20:51:44.124 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-23 20:51:44.131 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-23 20:51:44.138 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-23 20:51:44.145 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-23 20:51:44.153 +01:00 [VRB] Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-23 20:51:44.159 +01:00 [VRB] Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-23 20:51:44.165 +01:00 [VRB] Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-11-23 20:51:44.172 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-11-23 20:51:44.179 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-11-23 20:51:44.183 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-11-23 20:51:44.188 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-11-23 20:51:44.193 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-11-23 20:51:44.203 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[DistributedComputing.Model.Patient, Module 1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-11-23 20:51:44.209 +01:00 [VRB] After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-11-23 20:51:44.215 +01:00 [VRB] Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-23 20:51:44.222 +01:00 [VRB] Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-23 20:51:44.229 +01:00 [INF] Executed action DistributedComputing.Controllers.PatientsController.GetAll (Module 1) in 426.9779ms
+2020-11-23 20:51:44.237 +01:00 [INF] Executed endpoint 'DistributedComputing.Controllers.PatientsController.GetAll (Module 1)'
+2020-11-23 20:51:44.241 +01:00 [INF] HTTP GET /api/patients responded 200 in 514.5748 ms
+2020-11-23 20:51:44.249 +01:00 [DBG] Connection id "0HM4FT4EJTDOI" completed keep alive response.
+2020-11-23 20:51:44.259 +01:00 [DBG] 'PrDataContext' disposed.
+2020-11-23 20:51:44.267 +01:00 [INF] Request finished in 551.5097ms 200 application/json; charset=utf-8
+2020-11-23 20:52:00.638 +01:00 [DBG] Connection id "0HM4FT4EJTDOI" reset.
+2020-11-23 20:52:00.638 +01:00 [DBG] Connection id "0HM4FT4EJTDOH" reset.
+2020-11-23 20:52:00.714 +01:00 [DBG] Connection id "0HM4FT4EJTDOI" sending FIN because: "The client closed the connection."
+2020-11-23 20:52:00.728 +01:00 [DBG] Connection id "0HM4FT4EJTDOI" disconnecting.
+2020-11-23 20:52:00.737 +01:00 [DBG] Connection id "0HM4FT4EJTDOH" sending FIN because: "The client closed the connection."
+2020-11-23 20:52:00.757 +01:00 [DBG] Connection id "0HM4FT4EJTDOI" stopped.
+2020-11-23 20:52:00.754 +01:00 [DBG] Connection id "0HM4FT4EJTDOH" disconnecting.
+2020-11-23 20:52:00.801 +01:00 [DBG] Connection id "0HM4FT4EJTDOH" stopped.
