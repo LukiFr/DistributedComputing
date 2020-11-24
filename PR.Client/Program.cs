@@ -27,7 +27,7 @@ namespace PR.Client
                 Console.WriteLine("\nWybierz opcje:");
                 Console.WriteLine("1. Dodaj pacjenta");
                 Console.WriteLine("2. Wyswietl pacjentow");
-                Console.WriteLine("3. Zamknij program");
+                Console.WriteLine("3. Wywolaj bledy");
 
                 int caseSwitch = Convert.ToInt32(Console.ReadLine());
 
@@ -42,7 +42,7 @@ namespace PR.Client
                         break;
 
                     case 3:
-                        isRunning = false;
+                        makeErrors();
                         break;
 
                     default:
@@ -51,6 +51,14 @@ namespace PR.Client
 
             }
                 
+        }
+
+        static private async void makeErrors()
+        {        
+            await client.PutAsync("https://localhost:5000/api/patients", 
+                new StringContent("test", Encoding.UTF8, "application/json"));
+            await client.PutAsync("https://localhost:5002/api/email", 
+                new StringContent("test", Encoding.UTF8, "application/json"));
         }
 
         static private async void Authorize()

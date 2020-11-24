@@ -26,12 +26,12 @@ namespace DistributedComputing.Controllers
             _sender = sender;
         }
 
-        //[HttpPut]
-        //[AllowAnonymous]
-        //public IActionResult InvalidAction()
-        //{
-            //throw new InvalidOperationException("Symulowany problem z aplikacja");
-        //}
+        [HttpPut]
+        [AllowAnonymous]
+        public IActionResult InvalidAction()
+        {
+            throw new InvalidOperationException("Symulowany problem z aplikacja (PatientsController)");
+        }
 
         [HttpGet]
         [AllowAnonymous]
@@ -59,6 +59,7 @@ namespace DistributedComputing.Controllers
             return Created("/api/patients/", p);
 
         }
+
 
     }
 }

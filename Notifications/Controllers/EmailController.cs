@@ -17,11 +17,20 @@ namespace Notifications.Controllers
     [Authorize]
     public class EmailController : ControllerBase
     {
+
         [HttpPost]
         public void SendMessage(EmailMessageRequest request)
         {
             EmailSender sender = new EmailSender();
             sender.SendNewUserEmail(request.EmailAdress);
+
+        }
+
+        [HttpPut]
+        [AllowAnonymous]
+        public IActionResult InvalidAction()
+        {
+            throw new InvalidOperationException("Symulowany problem z aplikacja (EmailController)");
         }
     }
 }

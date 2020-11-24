@@ -1,0 +1,129 @@
+2020-11-23 23:21:53.930 +01:00 [DBG] Hosting starting
+2020-11-23 23:21:54.085 +01:00 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-23 23:21:54.108 +01:00 [DBG] Reading data from file 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys\key-6c4db5d7-0385-45b9-8d0e-4b3b066fc119.xml'.
+2020-11-23 23:21:54.132 +01:00 [DBG] Found key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119}.
+2020-11-23 23:21:54.153 +01:00 [DBG] Considering key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} with expiration date 2021-01-10 17:56:15Z as default key.
+2020-11-23 23:21:54.166 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-23 23:21:54.170 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2020-11-23 23:21:54.175 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-23 23:21:54.182 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2020-11-23 23:21:54.186 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2020-11-23 23:21:54.192 +01:00 [DBG] Using key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} as the default key.
+2020-11-23 23:21:54.194 +01:00 [DBG] Key ring with default key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} was loaded during application startup.
+2020-11-23 23:21:54.392 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2020-11-23 23:21:54.458 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 04FCC8833D747B4EC23C7D55EB302A8BB9D18B02)
+2020-11-23 23:21:54.476 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-23 23:21:54.521 +01:00 [DBG] Loaded hosting startup assembly Notifications
+2020-11-23 23:21:54.527 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-23 23:21:54.531 +01:00 [INF] Hosting environment: Development
+2020-11-23 23:21:54.535 +01:00 [INF] Content root path: C:\Users\Admin\source\repos\PR.Patients\Notifications
+2020-11-23 23:21:54.539 +01:00 [DBG] Hosting started
+2020-11-23 23:25:32.428 +01:00 [INF] Application is shutting down...
+2020-11-23 23:25:32.429 +01:00 [DBG] Hosting stopping
+2020-11-23 23:25:32.440 +01:00 [DBG] Hosting stopped
+2020-11-23 23:25:53.735 +01:00 [DBG] Hosting starting
+2020-11-23 23:25:54.013 +01:00 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-23 23:25:54.078 +01:00 [DBG] Reading data from file 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys\key-6c4db5d7-0385-45b9-8d0e-4b3b066fc119.xml'.
+2020-11-23 23:25:54.126 +01:00 [DBG] Found key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119}.
+2020-11-23 23:25:54.162 +01:00 [DBG] Considering key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} with expiration date 2021-01-10 17:56:15Z as default key.
+2020-11-23 23:25:54.190 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-23 23:25:54.207 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2020-11-23 23:25:54.218 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-23 23:25:54.231 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2020-11-23 23:25:54.257 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2020-11-23 23:25:54.286 +01:00 [DBG] Using key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} as the default key.
+2020-11-23 23:25:54.303 +01:00 [DBG] Key ring with default key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} was loaded during application startup.
+2020-11-23 23:25:54.885 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2020-11-23 23:25:55.009 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 04FCC8833D747B4EC23C7D55EB302A8BB9D18B02)
+2020-11-23 23:25:55.026 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-23 23:25:55.033 +01:00 [DBG] Loaded hosting startup assembly Notifications
+2020-11-23 23:25:55.038 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-23 23:25:55.043 +01:00 [INF] Hosting environment: Development
+2020-11-23 23:25:55.048 +01:00 [INF] Content root path: C:\Users\Admin\source\repos\PR.Patients\Notifications
+2020-11-23 23:25:55.052 +01:00 [DBG] Hosting started
+2020-11-23 23:27:32.212 +01:00 [DBG] Hosting starting
+2020-11-23 23:27:32.596 +01:00 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-23 23:27:32.671 +01:00 [DBG] Reading data from file 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys\key-6c4db5d7-0385-45b9-8d0e-4b3b066fc119.xml'.
+2020-11-23 23:27:32.736 +01:00 [DBG] Found key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119}.
+2020-11-23 23:27:32.791 +01:00 [DBG] Considering key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} with expiration date 2021-01-10 17:56:15Z as default key.
+2020-11-23 23:27:32.845 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-23 23:27:32.859 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2020-11-23 23:27:32.871 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-23 23:27:32.889 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2020-11-23 23:27:32.902 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2020-11-23 23:27:32.913 +01:00 [DBG] Using key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} as the default key.
+2020-11-23 23:27:32.939 +01:00 [DBG] Key ring with default key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} was loaded during application startup.
+2020-11-23 23:27:33.952 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2020-11-23 23:27:34.105 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 04FCC8833D747B4EC23C7D55EB302A8BB9D18B02)
+2020-11-23 23:27:34.127 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-23 23:27:34.148 +01:00 [DBG] Loaded hosting startup assembly Notifications
+2020-11-23 23:27:34.154 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-23 23:27:34.159 +01:00 [INF] Hosting environment: Development
+2020-11-23 23:27:34.164 +01:00 [INF] Content root path: C:\Users\Admin\source\repos\PR.Patients\Notifications
+2020-11-23 23:27:34.170 +01:00 [DBG] Hosting started
+2020-11-23 23:30:03.208 +01:00 [DBG] Hosting starting
+2020-11-23 23:30:03.519 +01:00 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-23 23:30:03.556 +01:00 [DBG] Reading data from file 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys\key-6c4db5d7-0385-45b9-8d0e-4b3b066fc119.xml'.
+2020-11-23 23:30:03.593 +01:00 [DBG] Found key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119}.
+2020-11-23 23:30:03.623 +01:00 [DBG] Considering key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} with expiration date 2021-01-10 17:56:15Z as default key.
+2020-11-23 23:30:03.645 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-23 23:30:03.655 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2020-11-23 23:30:03.661 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-23 23:30:03.672 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2020-11-23 23:30:03.682 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2020-11-23 23:30:03.691 +01:00 [DBG] Using key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} as the default key.
+2020-11-23 23:30:03.696 +01:00 [DBG] Key ring with default key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} was loaded during application startup.
+2020-11-23 23:30:04.189 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2020-11-23 23:30:04.350 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 04FCC8833D747B4EC23C7D55EB302A8BB9D18B02)
+2020-11-23 23:30:04.380 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-23 23:30:04.412 +01:00 [DBG] Loaded hosting startup assembly Notifications
+2020-11-23 23:30:04.422 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-23 23:30:04.428 +01:00 [INF] Hosting environment: Development
+2020-11-23 23:30:04.436 +01:00 [INF] Content root path: C:\Users\Admin\source\repos\PR.Patients\Notifications
+2020-11-23 23:30:04.441 +01:00 [DBG] Hosting started
+2020-11-23 23:31:20.182 +01:00 [DBG] Hosting starting
+2020-11-23 23:31:20.316 +01:00 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-23 23:31:20.332 +01:00 [DBG] Reading data from file 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys\key-6c4db5d7-0385-45b9-8d0e-4b3b066fc119.xml'.
+2020-11-23 23:31:20.346 +01:00 [DBG] Found key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119}.
+2020-11-23 23:31:20.359 +01:00 [DBG] Considering key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} with expiration date 2021-01-10 17:56:15Z as default key.
+2020-11-23 23:31:20.371 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-23 23:31:20.377 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2020-11-23 23:31:20.381 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-23 23:31:20.389 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2020-11-23 23:31:20.395 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2020-11-23 23:31:20.402 +01:00 [DBG] Using key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} as the default key.
+2020-11-23 23:31:20.405 +01:00 [DBG] Key ring with default key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} was loaded during application startup.
+2020-11-23 23:31:20.584 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2020-11-23 23:31:20.622 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 04FCC8833D747B4EC23C7D55EB302A8BB9D18B02)
+2020-11-23 23:31:20.633 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-23 23:31:20.635 +01:00 [DBG] Loaded hosting startup assembly Notifications
+2020-11-23 23:31:20.636 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-23 23:31:20.637 +01:00 [INF] Hosting environment: Development
+2020-11-23 23:31:20.638 +01:00 [INF] Content root path: C:\Users\Admin\source\repos\PR.Patients\Notifications
+2020-11-23 23:31:20.640 +01:00 [DBG] Hosting started
+2020-11-23 23:33:31.716 +01:00 [INF] Application is shutting down...
+2020-11-23 23:33:31.717 +01:00 [DBG] Hosting stopping
+2020-11-23 23:33:31.729 +01:00 [DBG] Hosting stopped
+2020-11-23 23:34:16.094 +01:00 [DBG] Hosting starting
+2020-11-23 23:34:16.238 +01:00 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-23 23:34:16.262 +01:00 [DBG] Reading data from file 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys\key-6c4db5d7-0385-45b9-8d0e-4b3b066fc119.xml'.
+2020-11-23 23:34:16.284 +01:00 [DBG] Found key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119}.
+2020-11-23 23:34:16.303 +01:00 [DBG] Considering key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} with expiration date 2021-01-10 17:56:15Z as default key.
+2020-11-23 23:34:16.319 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-23 23:34:16.326 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2020-11-23 23:34:16.330 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-23 23:34:16.338 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2020-11-23 23:34:16.345 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2020-11-23 23:34:16.352 +01:00 [DBG] Using key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} as the default key.
+2020-11-23 23:34:16.354 +01:00 [DBG] Key ring with default key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} was loaded during application startup.
+2020-11-23 23:34:16.537 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2020-11-23 23:34:16.581 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 04FCC8833D747B4EC23C7D55EB302A8BB9D18B02)
+2020-11-23 23:34:16.591 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-23 23:34:16.593 +01:00 [DBG] Loaded hosting startup assembly Notifications
+2020-11-23 23:34:16.594 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-23 23:34:16.596 +01:00 [INF] Hosting environment: Development
+2020-11-23 23:34:16.597 +01:00 [INF] Content root path: C:\Users\Admin\source\repos\PR.Patients\Notifications
+2020-11-23 23:34:16.598 +01:00 [DBG] Hosting started
+2020-11-23 23:37:02.052 +01:00 [INF] Application is shutting down...
+2020-11-23 23:37:02.053 +01:00 [DBG] Hosting stopping
+2020-11-23 23:37:02.068 +01:00 [DBG] Hosting stopped

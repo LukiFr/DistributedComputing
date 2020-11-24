@@ -1,0 +1,252 @@
+2020-11-24 21:29:22.068 +01:00 [DBG] Hosting starting
+2020-11-24 21:29:22.229 +01:00 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-24 21:29:22.252 +01:00 [DBG] Reading data from file 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys\key-6c4db5d7-0385-45b9-8d0e-4b3b066fc119.xml'.
+2020-11-24 21:29:22.278 +01:00 [DBG] Found key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119}.
+2020-11-24 21:29:22.297 +01:00 [DBG] Considering key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} with expiration date 2021-01-10 17:56:15Z as default key.
+2020-11-24 21:29:22.320 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-24 21:29:22.326 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2020-11-24 21:29:22.329 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-24 21:29:22.337 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2020-11-24 21:29:22.345 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2020-11-24 21:29:22.350 +01:00 [DBG] Using key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} as the default key.
+2020-11-24 21:29:22.352 +01:00 [DBG] Key ring with default key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} was loaded during application startup.
+2020-11-24 21:29:22.623 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2020-11-24 21:29:22.692 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 04FCC8833D747B4EC23C7D55EB302A8BB9D18B02)
+2020-11-24 21:29:22.712 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-24 21:29:22.736 +01:00 [DBG] Loaded hosting startup assembly Notifications
+2020-11-24 21:29:22.745 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-24 21:29:22.750 +01:00 [INF] Hosting environment: Development
+2020-11-24 21:29:22.756 +01:00 [INF] Content root path: C:\Users\Admin\source\repos\PR.Patients\Notifications
+2020-11-24 21:29:22.764 +01:00 [DBG] Hosting started
+2020-11-24 21:29:37.593 +01:00 [DBG] Connection id "0HM4GMUKTGIMS" accepted.
+2020-11-24 21:29:37.596 +01:00 [DBG] Connection id "0HM4GMUKTGIMS" started.
+2020-11-24 21:29:37.648 +01:00 [VRB] Connection id "0HM4GMUKTGIMS" sending "SETTINGS" frame for stream ID 0 with length 18 and flags "NONE"
+2020-11-24 21:29:37.656 +01:00 [VRB] Connection id "0HM4GMUKTGIMS" sending "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0
+2020-11-24 21:29:37.659 +01:00 [VRB] Connection id "0HM4GMUKTGIMS" received "SETTINGS" frame for stream ID 0 with length 24 and flags "NONE"
+2020-11-24 21:29:37.663 +01:00 [VRB] Connection id "0HM4GMUKTGIMS" sending "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK"
+2020-11-24 21:29:37.669 +01:00 [VRB] Connection id "0HM4GMUKTGIMS" received "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0
+2020-11-24 21:29:37.673 +01:00 [VRB] Connection id "0HM4GMUKTGIMS" received "HEADERS" frame for stream ID 1 with length 357 and flags "END_STREAM, END_HEADERS, PRIORITY"
+2020-11-24 21:29:37.697 +01:00 [VRB] Connection id "0HM4GMUKTGIMS" received "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK"
+2020-11-24 21:29:37.711 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5002/api/email  
+2020-11-24 21:29:37.717 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2020-11-24 21:29:37.718 +01:00 [VRB] All hosts are allowed.
+2020-11-24 21:29:37.756 +01:00 [DBG] 1 candidate(s) found for the request path '/api/email'
+2020-11-24 21:29:37.758 +01:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2020-11-24 21:29:38.028 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-11-24 21:29:38.031 +01:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2020-11-24 21:29:38.033 +01:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2020-11-24 21:29:38.037 +01:00 [VRB] Connection id "0HM4GMUKTGIMS" sending "HEADERS" frame for stream ID 1 with length 92 and flags "END_STREAM, END_HEADERS"
+2020-11-24 21:29:38.047 +01:00 [INF] Request finished in 337.882ms 405 
+2020-11-24 21:30:44.391 +01:00 [DBG] Connection id "0HM4GMUKTGIMT" accepted.
+2020-11-24 21:30:44.395 +01:00 [DBG] Connection id "0HM4GMUKTGIMT" started.
+2020-11-24 21:30:44.418 +01:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5002/api/email application/json; charset=utf-8 111
+2020-11-24 21:30:44.420 +01:00 [VRB] All hosts are allowed.
+2020-11-24 21:30:44.422 +01:00 [DBG] 1 candidate(s) found for the request path '/api/email'
+2020-11-24 21:30:44.429 +01:00 [DBG] Endpoint 'Notifications.Controllers.EmailController.InvalidAction (Notifications)' with route pattern 'api/Email' is valid for the request path '/api/email'
+2020-11-24 21:30:44.434 +01:00 [DBG] Request matched endpoint 'Notifications.Controllers.EmailController.InvalidAction (Notifications)'
+2020-11-24 21:30:44.440 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-11-24 21:30:44.443 +01:00 [INF] Executing endpoint 'Notifications.Controllers.EmailController.InvalidAction (Notifications)'
+2020-11-24 21:30:44.462 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2020-11-24 21:30:44.507 +01:00 [INF] Route matched with {action = "InvalidAction", controller = "Email"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult InvalidAction() on controller Notifications.Controllers.EmailController (Notifications).
+2020-11-24 21:30:44.512 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-11-24 21:30:44.514 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-11-24 21:30:44.516 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-11-24 21:30:44.521 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-11-24 21:30:44.523 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-11-24 21:30:44.528 +01:00 [DBG] Executing controller factory for controller Notifications.Controllers.EmailController (Notifications)
+2020-11-24 21:30:44.531 +01:00 [DBG] Executed controller factory for controller Notifications.Controllers.EmailController (Notifications)
+2020-11-24 21:30:44.533 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-24 21:30:44.537 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-24 21:30:44.540 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-24 21:30:44.543 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-24 21:30:44.562 +01:00 [INF] Executing action method Notifications.Controllers.EmailController.InvalidAction (Notifications) - Validation state: "Valid"
+2020-11-24 21:30:44.568 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-24 21:30:44.574 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-24 21:30:44.577 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-24 21:30:44.580 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-24 21:30:44.593 +01:00 [INF] Executed action Notifications.Controllers.EmailController.InvalidAction (Notifications) in 60.2914ms
+2020-11-24 21:30:44.596 +01:00 [INF] Executed endpoint 'Notifications.Controllers.EmailController.InvalidAction (Notifications)'
+2020-11-24 21:30:44.598 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Symulowany problem z aplikacja (EmailController)
+   at Notifications.Controllers.EmailController.InvalidAction() in C:\Users\Admin\source\repos\PR.Patients\Notifications\Controllers\EmailController.cs:line 33
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-24 21:30:44.783 +01:00 [DBG] Connection id "0HM4GMUKTGIMT" completed keep alive response.
+2020-11-24 21:30:44.787 +01:00 [INF] Request finished in 369.4615ms 500 text/plain
+2020-11-24 21:30:44.790 +01:00 [DBG] Connection id "0HM4GMUKTGIMT", Request id "0HM4GMUKTGIMT:00000001": started reading request body.
+2020-11-24 21:30:44.792 +01:00 [DBG] Connection id "0HM4GMUKTGIMT", Request id "0HM4GMUKTGIMT:00000001": done reading request body.
+2020-11-24 21:31:03.891 +01:00 [DBG] Connection id "0HM4GMUKTGIMT" reset.
+2020-11-24 21:31:03.920 +01:00 [DBG] Connection id "0HM4GMUKTGIMT" sending FIN because: "The client closed the connection."
+2020-11-24 21:31:03.929 +01:00 [DBG] Connection id "0HM4GMUKTGIMT" disconnecting.
+2020-11-24 21:31:03.944 +01:00 [DBG] Connection id "0HM4GMUKTGIMT" stopped.
+2020-11-24 21:31:39.651 +01:00 [DBG] Connection id "0HM4GMUKTGIMS" is closing.
+2020-11-24 21:31:39.679 +01:00 [DBG] Connection id "0HM4GMUKTGIMS" is closed. The last processed stream ID was 1.
+2020-11-24 21:31:39.685 +01:00 [VRB] Connection id "0HM4GMUKTGIMS" sending "GOAWAY" frame for stream ID 0 with length 8 and flags 0x0
+2020-11-24 21:31:39.692 +01:00 [DBG] Connection id "0HM4GMUKTGIMS" received FIN.
+2020-11-24 21:31:39.694 +01:00 [DBG] Connection id "0HM4GMUKTGIMS" stopped.
+2020-11-24 21:31:39.702 +01:00 [DBG] Connection id "0HM4GMUKTGIMS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2020-11-24 21:33:13.016 +01:00 [DBG] Connection id "0HM4GMUKTGIMU" accepted.
+2020-11-24 21:33:13.020 +01:00 [DBG] Connection id "0HM4GMUKTGIMU" started.
+2020-11-24 21:33:13.035 +01:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5002/api/email application/json; charset=utf-8 4
+2020-11-24 21:33:13.039 +01:00 [VRB] All hosts are allowed.
+2020-11-24 21:33:13.041 +01:00 [DBG] 1 candidate(s) found for the request path '/api/email'
+2020-11-24 21:33:13.045 +01:00 [DBG] Endpoint 'Notifications.Controllers.EmailController.InvalidAction (Notifications)' with route pattern 'api/Email' is valid for the request path '/api/email'
+2020-11-24 21:33:13.051 +01:00 [DBG] Request matched endpoint 'Notifications.Controllers.EmailController.InvalidAction (Notifications)'
+2020-11-24 21:33:13.059 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-11-24 21:33:13.060 +01:00 [INF] Executing endpoint 'Notifications.Controllers.EmailController.InvalidAction (Notifications)'
+2020-11-24 21:33:13.063 +01:00 [INF] Route matched with {action = "InvalidAction", controller = "Email"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult InvalidAction() on controller Notifications.Controllers.EmailController (Notifications).
+2020-11-24 21:33:13.067 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-11-24 21:33:13.070 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-11-24 21:33:13.072 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-11-24 21:33:13.075 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-11-24 21:33:13.080 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-11-24 21:33:13.083 +01:00 [DBG] Executing controller factory for controller Notifications.Controllers.EmailController (Notifications)
+2020-11-24 21:33:13.086 +01:00 [DBG] Executed controller factory for controller Notifications.Controllers.EmailController (Notifications)
+2020-11-24 21:33:13.091 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-24 21:33:13.094 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-24 21:33:13.097 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-24 21:33:13.100 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-24 21:33:13.104 +01:00 [INF] Executing action method Notifications.Controllers.EmailController.InvalidAction (Notifications) - Validation state: "Valid"
+2020-11-24 21:33:13.107 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-24 21:33:13.111 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-24 21:33:13.114 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-24 21:33:13.116 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-24 21:33:13.122 +01:00 [INF] Executed action Notifications.Controllers.EmailController.InvalidAction (Notifications) in 39.027ms
+2020-11-24 21:33:13.124 +01:00 [INF] Executed endpoint 'Notifications.Controllers.EmailController.InvalidAction (Notifications)'
+2020-11-24 21:33:13.125 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Symulowany problem z aplikacja (EmailController)
+   at Notifications.Controllers.EmailController.InvalidAction() in C:\Users\Admin\source\repos\PR.Patients\Notifications\Controllers\EmailController.cs:line 33
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-24 21:33:13.144 +01:00 [DBG] Connection id "0HM4GMUKTGIMU" completed keep alive response.
+2020-11-24 21:33:13.146 +01:00 [INF] Request finished in 111.4549ms 500 text/plain
+2020-11-24 21:33:13.147 +01:00 [DBG] Connection id "0HM4GMUKTGIMU", Request id "0HM4GMUKTGIMU:00000001": started reading request body.
+2020-11-24 21:33:13.152 +01:00 [DBG] Connection id "0HM4GMUKTGIMU", Request id "0HM4GMUKTGIMU:00000001": done reading request body.
+2020-11-24 21:35:14.641 +01:00 [DBG] Connection id "0HM4GMUKTGIMU" disconnecting.
+2020-11-24 21:35:14.660 +01:00 [DBG] Connection id "0HM4GMUKTGIMU" stopped.
+2020-11-24 21:35:14.664 +01:00 [DBG] Connection id "0HM4GMUKTGIMU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2020-11-24 21:36:15.276 +01:00 [INF] Application is shutting down...
+2020-11-24 21:36:15.281 +01:00 [DBG] Hosting stopping
+2020-11-24 21:36:15.292 +01:00 [DBG] Hosting stopped
+2020-11-24 22:33:56.303 +01:00 [DBG] Hosting starting
+2020-11-24 22:33:56.490 +01:00 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-24 22:33:56.515 +01:00 [DBG] Reading data from file 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys\key-6c4db5d7-0385-45b9-8d0e-4b3b066fc119.xml'.
+2020-11-24 22:33:56.546 +01:00 [DBG] Found key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119}.
+2020-11-24 22:33:56.567 +01:00 [DBG] Considering key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} with expiration date 2021-01-10 17:56:15Z as default key.
+2020-11-24 22:33:56.581 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-24 22:33:56.587 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2020-11-24 22:33:56.590 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-24 22:33:56.598 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2020-11-24 22:33:56.604 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2020-11-24 22:33:56.610 +01:00 [DBG] Using key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} as the default key.
+2020-11-24 22:33:56.612 +01:00 [DBG] Key ring with default key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} was loaded during application startup.
+2020-11-24 22:33:57.389 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2020-11-24 22:33:57.469 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 04FCC8833D747B4EC23C7D55EB302A8BB9D18B02)
+2020-11-24 22:33:57.486 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-24 22:33:57.513 +01:00 [DBG] Loaded hosting startup assembly Notifications
+2020-11-24 22:33:57.524 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-24 22:33:57.526 +01:00 [INF] Hosting environment: Development
+2020-11-24 22:33:57.528 +01:00 [INF] Content root path: C:\Users\Admin\source\repos\PR.Patients\Notifications
+2020-11-24 22:33:57.530 +01:00 [DBG] Hosting started
+2020-11-24 22:38:51.440 +01:00 [DBG] Hosting starting
+2020-11-24 22:38:51.579 +01:00 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-24 22:38:51.596 +01:00 [DBG] Reading data from file 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys\key-6c4db5d7-0385-45b9-8d0e-4b3b066fc119.xml'.
+2020-11-24 22:38:51.612 +01:00 [DBG] Found key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119}.
+2020-11-24 22:38:51.628 +01:00 [DBG] Considering key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} with expiration date 2021-01-10 17:56:15Z as default key.
+2020-11-24 22:38:51.641 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-24 22:38:51.646 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2020-11-24 22:38:51.649 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-24 22:38:51.656 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2020-11-24 22:38:51.661 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2020-11-24 22:38:51.667 +01:00 [DBG] Using key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} as the default key.
+2020-11-24 22:38:51.670 +01:00 [DBG] Key ring with default key {6c4db5d7-0385-45b9-8d0e-4b3b066fc119} was loaded during application startup.
+2020-11-24 22:38:52.175 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2020-11-24 22:38:52.213 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 04FCC8833D747B4EC23C7D55EB302A8BB9D18B02)
+2020-11-24 22:38:52.223 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-24 22:38:52.225 +01:00 [DBG] Loaded hosting startup assembly Notifications
+2020-11-24 22:38:52.227 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-24 22:38:52.228 +01:00 [INF] Hosting environment: Development
+2020-11-24 22:38:52.231 +01:00 [INF] Content root path: C:\Users\Admin\source\repos\PR.Patients\Notifications
+2020-11-24 22:38:52.233 +01:00 [DBG] Hosting started
+2020-11-24 22:39:25.320 +01:00 [DBG] Connection id "0HM4GO5KUPPL1" accepted.
+2020-11-24 22:39:25.323 +01:00 [DBG] Connection id "0HM4GO5KUPPL1" started.
+2020-11-24 22:39:25.413 +01:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5002/api/email application/json; charset=utf-8 4
+2020-11-24 22:39:25.419 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2020-11-24 22:39:25.421 +01:00 [VRB] All hosts are allowed.
+2020-11-24 22:39:25.459 +01:00 [DBG] 1 candidate(s) found for the request path '/api/email'
+2020-11-24 22:39:25.474 +01:00 [DBG] Endpoint 'Notifications.Controllers.EmailController.InvalidAction (Notifications)' with route pattern 'api/Email' is valid for the request path '/api/email'
+2020-11-24 22:39:25.478 +01:00 [DBG] Request matched endpoint 'Notifications.Controllers.EmailController.InvalidAction (Notifications)'
+2020-11-24 22:39:25.517 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-11-24 22:39:25.519 +01:00 [INF] Executing endpoint 'Notifications.Controllers.EmailController.InvalidAction (Notifications)'
+2020-11-24 22:39:25.531 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2020-11-24 22:39:25.565 +01:00 [INF] Route matched with {action = "InvalidAction", controller = "Email"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult InvalidAction() on controller Notifications.Controllers.EmailController (Notifications).
+2020-11-24 22:39:25.571 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-11-24 22:39:25.574 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-11-24 22:39:25.580 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-11-24 22:39:25.586 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-11-24 22:39:25.589 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-11-24 22:39:25.594 +01:00 [DBG] Executing controller factory for controller Notifications.Controllers.EmailController (Notifications)
+2020-11-24 22:39:25.598 +01:00 [DBG] Executed controller factory for controller Notifications.Controllers.EmailController (Notifications)
+2020-11-24 22:39:25.601 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-24 22:39:25.604 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-24 22:39:25.608 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-24 22:39:25.612 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-24 22:39:25.623 +01:00 [INF] Executing action method Notifications.Controllers.EmailController.InvalidAction (Notifications) - Validation state: "Valid"
+2020-11-24 22:39:25.628 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-24 22:39:25.630 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-24 22:39:25.634 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-24 22:39:25.637 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-24 22:39:25.646 +01:00 [INF] Executed action Notifications.Controllers.EmailController.InvalidAction (Notifications) in 47.8811ms
+2020-11-24 22:39:25.650 +01:00 [INF] Executed endpoint 'Notifications.Controllers.EmailController.InvalidAction (Notifications)'
+2020-11-24 22:39:25.652 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Symulowany problem z aplikacja (EmailController)
+   at Notifications.Controllers.EmailController.InvalidAction() in C:\Users\Admin\source\repos\PR.Patients\Notifications\Controllers\EmailController.cs:line 33
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-24 22:39:25.791 +01:00 [ERR] HTTP PUT /api/email responded 500 in 365.6151 ms
+2020-11-24 22:39:25.799 +01:00 [DBG] Connection id "0HM4GO5KUPPL1" completed keep alive response.
+2020-11-24 22:39:25.806 +01:00 [INF] Request finished in 398.3128ms 500 text/plain
+2020-11-24 22:39:25.876 +01:00 [DBG] Connection id "0HM4GO5KUPPL1", Request id "0HM4GO5KUPPL1:00000001": started reading request body.
+2020-11-24 22:39:25.879 +01:00 [DBG] Connection id "0HM4GO5KUPPL1", Request id "0HM4GO5KUPPL1:00000001": done reading request body.
+2020-11-24 22:41:26.210 +01:00 [DBG] Connection id "0HM4GO5KUPPL1" disconnecting.
+2020-11-24 22:41:26.226 +01:00 [DBG] Connection id "0HM4GO5KUPPL1" stopped.
+2020-11-24 22:41:26.236 +01:00 [DBG] Connection id "0HM4GO5KUPPL1" sending FIN because: "The Socket transport's send loop completed gracefully."
